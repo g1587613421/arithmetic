@@ -8,9 +8,12 @@ public class Main {
 //        maxs=new int[nums.length];
         int len;
         for (int i = 0; i < nums.length; i++) {
+            if (flag[i])
+                continue;
             len=1;
             int target=nums[i];
             while (target!=i){
+                flag[target]=true;
                 target=nums[target];
                 len++;
                 if (target>=nums.length){
