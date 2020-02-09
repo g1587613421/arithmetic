@@ -2,7 +2,7 @@
  * Copyright (c) 2020.版权所有高金磊
  */
 
-package 领扣算法.A简单题.N叉树的层序遍历;
+package 领扣算法.AA中等题.N叉树的层序遍历;
 
 import 领扣算法.A简单题.N叉树的最大深度.Node;
 
