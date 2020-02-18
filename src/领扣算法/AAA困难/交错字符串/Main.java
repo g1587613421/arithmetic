@@ -6,9 +6,11 @@ package 领扣算法.AAA困难.交错字符串;
 
 import Tools.SimpleTimeTest;
 
+import java.util.LinkedList;
+
 public class Main {
 
-
+    LinkedList<String> flag=new LinkedList<>();
     int f1=0,f2=0,f3=0;
     public boolean isInterleave(String s1, String s2, String s3) {
         if (s1.length()+s2.length()!=s3.length())
@@ -18,6 +20,9 @@ public class Main {
     }
     char middle,ff1,ff2;
     boolean plus(String s1, String s2, String s3,int f1,int f2,int f3){
+        if (flag.contains(""+f1+","+f2))
+            return false;
+        else flag.add(""+f1+","+f2);
         if (f3>=s3.length())
             return true;
         middle=s3.charAt(f3);
