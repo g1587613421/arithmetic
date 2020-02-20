@@ -13,7 +13,6 @@ public class Main {
         for (int i = left; i <=right; i++) {
             if (plus(i))
                 result.add(i);
-
         }
         return result;
     }
