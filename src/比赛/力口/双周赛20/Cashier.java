@@ -16,7 +16,7 @@ public class Cashier {
             data.put(products[i],prices[i]);
         }
         this.n=n;
-        this.discount=discount/100d;
+        this.discount=1-discount/100d;
     }
     int mon;
     public double getBill(int[] product, int[] amount) {
@@ -25,20 +25,13 @@ public class Cashier {
         for (int i = 0; i < product.length; i++) {
             mon+=data.get(product[i])*amount[i];
         }
-        if (count==n+1)
+        if (count==n)
         {
             count=0;
             return mon*discount;
 
         }
         return (double)mon;
-    }
-    public static String subZeroAndDot(String s){
-        if(s.indexOf(".") > 0){
-            s = s.replaceAll("0+?$", "");//去掉多余的0
-            s = s.replaceAll("[.]$", "");//如最后一位是.则去掉
-        }
-        return s;
     }
     
     
