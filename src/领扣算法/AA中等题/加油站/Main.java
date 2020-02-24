@@ -6,6 +6,7 @@ package 领扣算法.AA中等题.加油站;
 
 public class Main {
 
+
     public int canCompleteCircuit(int[] gas, int[] cost) {
         for (int i = 0; i < gas.length; i++) {
             gas[i]-=cost[i];
@@ -18,6 +19,7 @@ public class Main {
             int j;
             for ( j =1; j < gas.length; j++) {
                 lastgas+=gas[(i+j)%gas.length];
+                gas[(i+j)%gas.length]=-1;
                 if (lastgas<0)
                     break;
             }
