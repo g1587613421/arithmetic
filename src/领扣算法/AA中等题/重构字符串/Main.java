@@ -4,10 +4,7 @@
 
 package 领扣算法.AA中等题.重构字符串;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Main {    HashMap<Character,Integer> data=new HashMap<>();
     public String reorganizeString(String S) {
@@ -53,5 +50,6 @@ public class Main {    HashMap<Character,Integer> data=new HashMap<>();
     public static void main(String arg[]){//main--来自高金磊
     
         new Main().reorganizeString("aab");
+
     }
 }
