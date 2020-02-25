@@ -8,23 +8,32 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Main {
-    List<String> result=new LinkedList<>();
+    LinkedList<String> result=new LinkedList<>();
     StringBuffer middle;
-      public List<String> binaryTreePaths(TreeNode root) {
-          plus(root.left, new StringBuffer(root.val));
-          plus(root.right, new StringBuffer(root.val));
-          return result;
-
+    public List<String> binaryTreePaths(TreeNode root) {
+        if (root==null)
+            return result;
+        middle=new StringBuffer();
+        middle.append(root.val);
+        if (root.left!=null)
+            plus(root.left, new StringBuffer(middle));
+        if (root.right!=null)
+            plus(root.right, middle);
+        if (root.right==root.left)
+            result.add(middle.toString());
+        return result;
+    }
+    void plus(TreeNode ro,StringBuffer middle){
+        middle.append("->").append(ro.val);
+        if (ro.left!=null)
+            plus(ro.left, new StringBuffer(middle));
+        if (ro.right!=null)
+            plus(ro.right, middle);
+        if (ro.right==ro.left)
+            result.add(middle.toString());
     }
 
-void plus(TreeNode root, StringBuffer mm) {
-    if (root == null)
-        result.add(mm.toString());
-    else {
-        plus(root.left, new StringBuffer(mm.append(root.val)));
-        plus(root.right, new StringBuffer(mm.append(root.val)));
-    }
-}
+
     class TreeNode {
         int val;
         TreeNode left;
