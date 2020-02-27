@@ -13,13 +13,17 @@ public class Main {
         int sum=scanner.nextInt();
         String result[]=new String[sum];
         for (int i = 0; i < sum; i++) {
-            
-            result[i]=Long.toString(Long.parseLong(""+scanner.next(), 16),8);
-
+            result[i]= plus(scanner.next());
         }
         for (String s : result) {
             System.out.println(s);
         }
+
+    }
+
+   static String plus(String s){
+        String middle=Long.toOctalString(Long.parseLong(s, 16));
+        return middle;
 
     }
 }
