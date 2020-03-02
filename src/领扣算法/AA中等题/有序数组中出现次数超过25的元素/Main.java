@@ -2,7 +2,7 @@
  * Copyright (c) 2020.版权所有高金磊
  */
 
-package 领扣算法.A简单题.有序数组中出现次数超过25的元素;
+package 领扣算法.AA中等题.有序数组中出现次数超过25的元素;
 
 public class Main {
     public int findSpecialInteger(int[] arr) {
