@@ -21,7 +21,7 @@ public class Main {
         return (int)Math.abs( ChronoUnit.DAYS.between(localDate, localDate1));
     }
     //有误差
-    public int daysBetweenDatesFromCandle(String date1, String date2) {
+    public int daysBetweenDatesFromDate(String date1, String date2) {
         int da[]=new int[3];
         int da1[]=new int[3];
         String[] ds= date1.split("-");
@@ -50,13 +50,25 @@ public class Main {
        System.out.println(localDate.getDayOfWeek());//直接输出星期几(全大写)
         return new String[]{"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"}[da%7];
     }
+
+    /**
+     * 一年中的第几天--解法之一
+     * @param date
+     * @return
+     */
+    public int dayOfYear(String date) {
+        LocalDate localDate=LocalDate.parse(date);
+       return localDate.getDayOfYear();
+    }
     
     public static void main(String arg[]){//main--来自高金磊
     
         Main main=new Main();
         System.out.println(main.daysBetweenDates("1971-06-29","2010-09-24"));
-        System.out.println("下面的没有误差");
-        System.out.println(main.daysBetweenDatesFromCandle("1971-06-29","2010-09-24"));
+        System.out.println("下面的有误差");
+        System.out.println(main.daysBetweenDatesFromDate("1971-06-29","2010-09-24"));
+        System.out.println(main.dayOfTheWeek(1998,4,20));
+        System.out.println(main.dayOfYear("1999-02-09"));
     
     }
 }
