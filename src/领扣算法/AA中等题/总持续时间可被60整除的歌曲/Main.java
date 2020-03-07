@@ -2,7 +2,7 @@
  * Copyright (c) 2020.版权所有高金磊
  */
 
-package 领扣算法.A简单题.总持续时间可被60整除的歌曲;
+package 领扣算法.AA中等题.总持续时间可被60整除的歌曲;
 
 import java.util.HashMap;
 
