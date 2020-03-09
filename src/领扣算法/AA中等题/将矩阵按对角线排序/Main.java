@@ -41,8 +41,6 @@ public class Main {
                 mat[x++][y++] = middle.get(y - 1);
             }
             middle.clear();
-
-
         }
         return mat;
     }
