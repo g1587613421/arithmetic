@@ -20,12 +20,13 @@ public class Main {
         while (end<middle.length){
             if (middle[end]-middle[start]==target)
             {
-                count++;
+                if (++count==2&&end!=middle.length-1)
+                    return true;
                 start=end;
             }
          end++;
 
         }
-        return count==3||count>3&&target==0;
+        return false;
     }
 }
