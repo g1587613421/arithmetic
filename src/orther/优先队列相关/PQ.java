@@ -24,7 +24,7 @@ public class PQ {
 //        DelayQueue    --优先级调度队列--单线程--安全--优先级堆支持的、基于时间的调度队列
         //add操作是O(1)
         data.add(5);
-        data.add(3);
+        data.add(5);
         data.add(150);
         data.offer(1);
         //取出数据的时间复杂度是O(log2n)--几乎是遍历一遍来寻找符合排队器的值.
