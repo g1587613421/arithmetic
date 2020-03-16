@@ -6,6 +6,16 @@ package orther.树相关;
 
 import java.util.*;
 
+/**平衡二叉树非空结点的遍历和复原
+ * 二叉树复原中,中序还原最为繁琐,使用二分查找的思想即可(即为数据的最中间)
+ * 还原先根遍历的结果时,每次弹出栈顶元素添加即可,而后根每次从数据栈的栈底
+ *
+ * 对于本文没有的带有空结点的(非平衡二叉树的)每次遇到null的时候当成元素添加,并保证要添加的结点不是null即可
+ *
+ * 两个二叉树是否相等则可以按照任何方式遍历得到遍历的结果,判断结果是否相同即可(不是最优解)
+ *
+ * @param <T>
+ */
 public class 各种遍历和还原 <T> {
 
     /** 通过数组构造二叉树--如果数组排序就是二叉搜索树--结果是平衡树
@@ -186,7 +196,6 @@ public class 各种遍历和还原 <T> {
         data_node=tools.build_BinarySearchTree_fromArray_Plus(integer_data,0,integer_data.length-1);
         tools.show_list(tools.root_Traversal_Not_Destory_Tree(data_node, Order));
         //后根和先根中根类似只需要换一下添加顺序--就不再写了
-
 
     }
 
