@@ -16,7 +16,7 @@ public class Sort {
             QuickSort(num, 0, num.length-1);
     }
     /**
-     * 快速排序-局部--原地
+     * 排序-局部--原地
      * @param num	排序的数组
      * @param left	数组的前针
      * @param right 数组后针
