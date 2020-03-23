@@ -13,11 +13,9 @@ class ListNode {
 class Main {
     public ListNode middleNode(ListNode head) {
         ListNode middle=head;
-        while (head.next!=null){
+        while (head!=null&&head.next!=null){
             middle=middle.next;
-            head=head.next;
-            if (head.next!=null)
-                head=head.next;
+            head=head.next.next;
         }
         return middle;
     }
