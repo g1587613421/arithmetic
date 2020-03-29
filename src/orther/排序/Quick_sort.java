@@ -47,7 +47,7 @@ public class Quick_sort {
         int[] arr = {10,7,2,4,7,62,3,4,2,1,8,9,19};
         quickSort(arr, 0, arr.length-1);
         for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i]);
+            System.out.print(arr[i]+"  ");
         }
     }
 
