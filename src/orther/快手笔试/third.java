@@ -2,7 +2,7 @@
  * Copyright (c) 2020.版权所有高金磊
  */
 
-package orther.笔试;
+package orther.快手笔试;
 
 import java.util.Arrays;
 import java.util.Comparator;
