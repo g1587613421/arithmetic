@@ -16,8 +16,9 @@ public class 运行时常量池 {
         
         String ab="ab";
         String abs=a+"b";//abs=new StringBuild().append().append().toString();--ab在运行常量池中--abs在heap中
+        String abss="a"+"b";//将会去寻找"ab"是不是在常量表里面StringTable
         System.out.println(ab==abs);
-
+        System.out.println(ab==abss);
         
     }
 }
