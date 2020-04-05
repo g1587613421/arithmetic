@@ -20,5 +20,11 @@ public class 运行时常量池 {
         System.out.println(ab==abs);
         System.out.println(ab==abss);
         
+        String ss=new String("1215")+new String("4546");
+        ss.intern();//将堆中的字符串对象放入常量栈中
+        String sm="12154546";
+        System.out.println(sm==ss);
+        System.out.print(ss=="12154546");
+        
     }
 }
