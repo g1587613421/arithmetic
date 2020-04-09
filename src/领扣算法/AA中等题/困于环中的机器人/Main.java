@@ -42,8 +42,8 @@ public class Main {
     }
     
     
-    public static void main(String arg[]){//main--来自高金磊
-    
-       new Main().isRobotBounded("GLRLLGLL");
-    }
+//    public static void main(String arg[]){//main--来自高金磊
+//
+//       new Main().isRobotBounded("GLRLLGLL");
+//    }
 }
