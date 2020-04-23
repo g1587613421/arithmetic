@@ -25,6 +25,6 @@ public class 运行时常量池 {
         String sm="12154546";
         System.out.println(sm==ss);
         System.out.print(ss=="12154546");
-        
+
     }
 }
