@@ -2,7 +2,7 @@
  * Copyright (c) 2020.版权所有高金磊
  */
 
-package 领扣算法.寻找重复的子树;
+package 领扣算法.探索.寻找重复的子树;
 
 import java.util.HashSet;
 import java.util.LinkedList;
