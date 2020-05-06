@@ -2,7 +2,7 @@
  * Copyright (c) 2020.版权所有高金磊
  */
 
-package 领扣算法.探索.四数相加II;
+package 领扣算法.探索;
 
 import java.util.HashMap;
 
