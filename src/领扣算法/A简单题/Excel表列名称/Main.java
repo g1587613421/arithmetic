@@ -14,10 +14,10 @@ public class Main {
         }
         return stringBuilder.reverse().toString();
     }
-    public static void main(String arg[]){//main--来自高金磊
-    
-        new Main().convertToTitle(111);
-    }
+//    public static void main(String arg[]){//main--来自高金磊
+//
+//        new Main().convertToTitle(111);
+//    }
 }
 
 
