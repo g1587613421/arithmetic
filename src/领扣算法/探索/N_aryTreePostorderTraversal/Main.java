@@ -26,8 +26,6 @@ public class Main {
         }
     }
 
-
-
         LinkedList<Integer> res=new LinkedList<>();
         public List<Integer> postorder(Node root) {
             plus(root);
