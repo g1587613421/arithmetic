@@ -6,6 +6,8 @@ package 领扣算法.AA中等题.找两个和为目标值且不重叠的子数�
 
 import java.util.LinkedList;
 
+
+///不对////
 public class Main {
     class res{
         int le,ri,size;
