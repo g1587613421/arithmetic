@@ -85,9 +85,11 @@ public class 汉诺塔模拟器 {
                     hnt.print();
                 }
                 else if (target.equals("all")){
+                    System.out.println("输入显示时间间隔(ms)--建议300");
+                    int t=scanner.nextInt();
                     while (true){
                         try {
-                            Thread.sleep(1000);
+                            Thread.sleep(t);
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
