@@ -17,16 +17,7 @@ public class Main {
                 c=c1;
                 count=1;
             }
-        }执行用时：
-        1 ms
-                , 在所有 Java 提交中击败了
-        100.00%
-                的用户
-        内存消耗：
-        40 MB
-                , 在所有 Java 提交中击败了
-        6.19%
-                的用户
+        }
         return Math.max(count, max);
     }
 }
