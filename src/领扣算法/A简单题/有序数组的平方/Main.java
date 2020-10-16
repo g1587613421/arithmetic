@@ -16,4 +16,5 @@ public class Main {
         Arrays.sort(A);
         return A;
     }
+
 }
