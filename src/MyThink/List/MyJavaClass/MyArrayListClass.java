@@ -2,7 +2,7 @@
  * Copyright (c) 2021.版权所有高金磊
  */
 
-package MyJavaClass.List;
+package MyThink.List.MyJavaClass;
 
 public class MyArrayListClass<T> implements MyArrayList<T>{
     T[] datas;
@@ -90,7 +90,7 @@ public class MyArrayListClass<T> implements MyArrayList<T>{
         if (isEmpty()){
             return null;
         }
-        return datas[size--];
+        return datas[--size];
     }
 
     @Override

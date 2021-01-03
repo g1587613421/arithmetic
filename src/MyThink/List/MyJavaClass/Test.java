@@ -2,15 +2,20 @@
  * Copyright (c) 2021.版权所有高金磊
  */
 
-package MyJavaClass.List;
-
-import Tools.SimpleTimeTest;
-
-import java.util.ArrayList;
+package MyThink.List.MyJavaClass;
 
 public class Test {
 
     public static void main(String arg[]){//main--来自高金磊
+        MyArrayList<Integer> myArrayList=new MyArrayListClass();
+        myArrayList.add(11);
+        try {
+            System.out.println(""+myArrayList.pollLast());
+//            System.out.println(""+myArrayList.pollLast());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
 //        SimpleTimeTest.TestMethod();
 //        MyArrayListClass<Integer> data,middle;
 //        for (int n = 0; n < 1000; n++) {
@@ -37,22 +42,22 @@ public class Test {
 //        SimpleTimeTest.endMethod("压力测试结果:");
 
 
-        SimpleTimeTest.TestMethod();
-        ArrayList<Integer> dd=new ArrayList<>(4);
-        for (int i = 0; i < 100000; i++) {
-            dd.add(i);
-            dd.add(i+500);
-//            dd.remove(i*2);
-        }
-        SimpleTimeTest.endMethod("写入压力测试");
-        SimpleTimeTest.TestMethod();
-        MyArrayListClass<Integer> data=new MyArrayListClass<>(1024);
-        for (int i = 0; i < 100000; i++) {
-            data.add(i);
-            data.add(i+500);
-//            data.remove(i*6);
-        }
-        SimpleTimeTest.endMethod("写入压力测试");
+//        SimpleTimeTest.TestMethod();
+//        ArrayList<Integer> dd=new ArrayList<>(4);
+//        for (int i = 0; i < 100000; i++) {
+//            dd.add(i);
+//            dd.add(i+500);
+////            dd.remove(i*2);
+//        }
+//        SimpleTimeTest.endMethod("写入压力测试");
+//        SimpleTimeTest.TestMethod();
+//        MyArrayListClass<Integer> data=new MyArrayListClass<>(1024);
+//        for (int i = 0; i < 100000; i++) {
+//            data.add(i);
+//            data.add(i+500);
+////            data.remove(i*6);
+//        }
+//        SimpleTimeTest.endMethod("写入压力测试");
 //        SimpleTimeTest.TestMethod();
 //        ArrayList<Integer> data1,middle1;
 //        for (int n = 0; n < 1000; n++) {
