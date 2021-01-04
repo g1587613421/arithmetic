@@ -2,7 +2,7 @@
  * Copyright (c) 2021.版权所有高金磊
  */
 
-package MyThink.List.MyJavaClass;
+package MyThink.List.MyJavaClass.MyArrayList;
 
 public interface MyArrayList<T> {
 
