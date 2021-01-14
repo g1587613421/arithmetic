@@ -10,6 +10,16 @@ public class Main {
     public boolean buddyStrings(String A, String B) {
         if (A.length()!=B.length())
             return false;
+        if (A.equals(B)){
+            HashSet<Character> flag=new HashSet<>();
+            for (char c : A.toCharArray()) {
+                if (flag.contains(c))
+                    return true;
+                else
+                    flag.add(c);
+            }
+            return false;
+        }
         char[] charsA=A.toCharArray(),charsB=B.toCharArray();
         HashSet<Character> charactersA=new HashSet<>(),charactersB=new HashSet<>();
         int count=0;
