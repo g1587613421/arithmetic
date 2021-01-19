@@ -2,7 +2,7 @@
  * Copyright (c) 2021.版权所有高金磊
  */
 
-package 领扣算法.剑指offer;
+package 领扣算法.剑指offer.数组中重复的数字;
 
 import java.util.HashSet;
 
