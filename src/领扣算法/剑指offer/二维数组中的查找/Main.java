@@ -6,7 +6,17 @@ package 领扣算法.剑指offer.二维数组中的查找;
 
 public class Main {
 
-
+    public boolean findNumberIn2DArray(int[][] matrix, int target) {
+        for (int[] ints : matrix) {
+            for (int anInt : ints) {
+                if (anInt>target)
+                    break;
+                if (anInt==target)
+                    return true;
+            }
+        }
+        return false;
+    }
 
 
 
