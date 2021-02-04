@@ -18,6 +18,7 @@ public class Main {
         }
         return Collections.max(data.values());
     }
+
     int middle;
    int plus(int num){
         middle=0;
