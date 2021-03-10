@@ -13,9 +13,7 @@ public class Main {
         LinkedList<Integer> data=new LinkedList<>();
          Scanner scanner=new Scanner(System.in);
          int sum=scanner.nextInt();
-         //最多有一次排序方式发生改变
-        //不容易实现
-
+         //最多有一次排序方式发生改变--最大值左边递增右边递减--参考力扣
 
         //模拟
         int nums[]=new int[sum];
