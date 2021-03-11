@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020.版权所有高金磊
+ * Copyright (c) 2021.版权所有高金磊
  */
 
 package 领扣算法.AAA困难.LFU缓存;
@@ -15,6 +15,7 @@ class LFUCache {
         cache = new LinkedList<>();
         maxsize=capacity;
     }
+
 
     public int get(int key) {
         if (cache.contains(key)) {
