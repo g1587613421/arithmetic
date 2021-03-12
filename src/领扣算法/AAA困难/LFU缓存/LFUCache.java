@@ -8,12 +8,13 @@ import java.util.HashMap;
 import java.util.LinkedList;
 
 class LFUCache {
-    HashMap<Integer,Integer> data=new HashMap<>();
+    HashMap<Integer,Integer> data;
     LinkedList<Integer> cache;
     int maxsize=0;
     public LFUCache(int capacity) {
         cache = new LinkedList<>();
         maxsize=capacity;
+        data = new HashMap<>();
     }
 
 
