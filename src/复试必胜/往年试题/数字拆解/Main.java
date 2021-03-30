@@ -5,19 +5,24 @@
 package 复试必胜.往年试题.数字拆解;
 
 public class Main {
-    public static void main(String arg[]) {//main--来自高金磊
-//https://www.cnblogs.com/libra-yong/p/6360181.html
-        int target = 3;
-        //递归
-        System.out.println(plus(target,0));
+    public static void f(int n, int[] a, int k) {
+        if (n <= 0) {
+            for (int i = 0; i < k; i++)
+                System.out.print(a[i] + " ");
+            System.out.println();
+            return;
+        }
+        for (int i = n; i >= 1; i--) {
+            if (k > 0 && i > a[k - 1])
+                continue;
+            a[k] = i;
+            f(n - i, a, k + 1);
+        }
     }
 
-    private static int plus(int i, int i1) {
-        if (i1>i)
-            return 0;
-        if (i1==i)
-            return 1;
-        return plus(i-1, i1+1)+1;
-
+    public static void main(String[] args) {
+        int[] a = new int[1000];
+        f(6, a, 0);
     }
+
 }
