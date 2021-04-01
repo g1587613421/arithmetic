@@ -32,6 +32,7 @@ public class Main {
         while (data.size()>1){
             data.addLast(data.pollLast()+data.pollLast());
         }
+
         return data.pollLast();
     }
 
